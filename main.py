@@ -68,4 +68,39 @@ def read_content_file(file_text):
         contents.append((key,content))
     return contents
 
-print(read_all_contents())
+import shutil
+from os import path
+
+def duplicate_template_dir():
+    src = "template/"
+    dest = "target/"
+    if path.isdir(dest):
+        shutil.rmtree(dest)
+    shutil.copytree(src,dest)
+
+def fill_file_with_content(path,contents):
+    with open(path,"r") as f:
+        text = f.read()
+    
+    for content in contents:
+        key = content[0]
+        body = content[1]
+        to_replace = "{{"+key+"}}"
+        text = text.replace(to_replace,body)
+    
+    with open(path,"w") as f:
+        f.write(text)
+
+def fill_all_files(dir,contents):
+    paths = pathlib.Path(dir).glob("*.html")
+    for path in paths:
+        fill_file_with_content(path,contents)
+
+def run():
+    contents = read_all_contents()
+    duplicate_template_dir()
+    fill_all_files("target",contents)
+    print("Finished!")
+
+run()
+    
