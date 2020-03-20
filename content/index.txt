@@ -1,6 +1,0 @@
-title
-Welcome to City of Southlake Response!
-
-
-body
-This is a website for Daniel!

@@ -8,14 +8,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="materialize-src/css/materialize.css">
+    <link rel="stylesheet" href="custom.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
-    <h1>{{title}}</h1>
-    <p>{{body}}</p>
+    <!-- navbar  -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-down"><i
+                    class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo">{{site-title}}</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="inventory-management.html">Inventory Management</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidenav  -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <h3 style="margin: 10px;">COVID-19 Small Business Response</h3>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="employees.html">Employees</a></li>
+        <li><a href="finance.html">Finance</a></li>
+        <li><a href="inventory-management.html">Inventory Management</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
+    </ul>
+    <div class="parallax-container">
+        <h1 class="white-text center">{{home-page-title}}</h1>
+        <h3 class="white-text center">{{home-page-subtitle}}</h3>
+        <div class="parallax"><img style="filter: brightness(50%);" src="assets/home-page-parallax.jpeg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="section white">
+            <p class="flow-text">{{home-page-introduction}}
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="section white">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #022E4C;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{health-card-title}}</span>
+                            <p>{{health-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="health.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #957931;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{employees-card-title}}</span>
+                            <p>{{employees-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="employees.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #5b316e;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{finance-card-title}}</span>
+                            <p>{{finance-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="finance.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #7D351E;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{inventory-management-card-title}}</span>
+                            <p>{{inventory-management-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="inventory-management.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #082D15;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{marketing-card-title}}</span>
+                            <p>{{marketing-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="marketing.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="background-color: #296b6b;">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{employees-card-title}}</span>
+                            <p>{{employees-card-description}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="employees.html">CLICK FOR MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h3>Contact Us!</h3>
+            <p class="flow-text">WIP</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h3>{{home-page-government-involvement-title}}</h3>
+            <p class="flow-text">{{home-page-government-involvement-body}}</p>
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab col s3"><a class="active" href="#local">LOCAL</a></li>
+                <li class="tab col s3"><a href="#state">STATE</a></li>
+                <li class="tab col s3"><a href="#national">NATIONAL</a></li>
+            </ul>
+            <div id="local" class="col s12">
+                <h4>{{home-page-local-government-title}}</h4>
+                <p class="flow-text">{{home-page-local-government-body}}</p>
+            </div>
+            <div id="state" class="col s12">
+                <h4>{{home-page-state-government-title}}</h4>
+                <p class="flow-text">{{home-page-state-government-body}}</p>
+            </div>
+            <div id="national" class="col s12">
+                <h4>{{home-page-national-government-title}}</h4>
+                <p class="flow-text">{{home-page-national-government-body}}</p>
+            </div>
+        </div>
+    </div>
     <script src="materialize-src/js/bin/materialize.min.js"></script>
+    <script>
+        M.AutoInit()
+    </script>
 </body>
 
 </html>
