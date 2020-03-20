@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>COVID-19 Response</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="materialize-src/css/materialize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-down"><i
+                    class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo">{{site-title}}</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="inventory-management.html">Inventory Management</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- sidenav  -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <h3 style="margin: 10px;">COVID-19 Small Business Response</h3>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="employees.html">Employees</a></li>
+        <li><a href="finance.html">Finance</a></li>
+        <li><a href="inventory-management.html">Inventory Management</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
+    </ul>
+    <div class="parallax-container">
+        <h1 class="white-text center">{{inventory-management-page-title}}</h1>
+        <h3 class="white-text center">{{inventory-management-page-subtitle}}</h3>
+        <div class="parallax"><img style="filter: brightness(50%);" src="assets/inventory-management-page-parallax.jpeg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="section white">
+            <p>{{inventory-management-page-introduction}}
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h4>{{inventory-management-steps-title}}</h4>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">{{inventory-management-steps-1-title}}</div>
+                    <div class="collapsible-body">
+                        <p>{{inventory-management-steps-1-body}}</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">{{inventory-management-steps-2-title}}</div>
+                    <div class="collapsible-body">
+                        <p>{{inventory-management-steps-2-body}}</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">{{inventory-management-steps-3-title}}</div>
+                    <div class="collapsible-body">
+                        <p>{{inventory-management-steps-3-body}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>{{inventory-management-page-other-sites-title}}</h5>
+            <p>
+                {{inventory-management-page-other-sites-list}}
+            </p>
+        </div>
+
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="materialize-src/js/bin/materialize.min.js"></script>
+    <script>
+        M.AutoInit()
+    </script>
+</body>
+
+</html>

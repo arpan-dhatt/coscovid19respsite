@@ -1,7 +1,6 @@
-import argparse
-
-parser = argparse.ArgumentParser(description="""\
-    This program writes information from the content/ directory
+# Instructions to Use Content:
+This is copy pasted from main.py file.
+This program writes information from the content/ directory
     to the current directory using the template provided in the
     template/ directory.
 
@@ -44,64 +43,3 @@ parser = argparse.ArgumentParser(description="""\
     <p>
         {{body}}
     </p>
-""", formatter_class=argparse.RawTextHelpFormatter)
-parser.parse_args()
-
-import pathlib
-
-def read_all_contents():
-    paths = pathlib.Path('content').glob("*.txt")
-    contents = []
-    for path in paths:
-        with open(path,"r") as f:
-            contents += read_content_file(f.read())
-    return contents
-
-def read_content_file(file_text):
-    contents = []
-    splits = file_text.split("\n\n\n")
-    for split in splits:
-        split = split.replace("\n\n","<br>")
-        lines = split.split("\n")
-        key = lines[0]
-        content = " ".join(lines[1:])
-        contents.append((key,content))
-    return contents
-
-import shutil
-from os import path
-
-def duplicate_template_dir():
-    src = "template/"
-    dest = "target/"
-    if path.isdir(dest):
-        shutil.rmtree(dest)
-    shutil.copytree(src,dest)
-
-def fill_file_with_content(path,contents):
-    with open(path,"r") as f:
-        text = f.read()
-    
-    for content in contents:
-        key = content[0]
-        body = content[1]
-        to_replace = "{{"+key+"}}"
-        text = text.replace(to_replace,body)
-    
-    with open(path,"w") as f:
-        f.write(text)
-
-def fill_all_files(dir,contents):
-    paths = pathlib.Path(dir).glob("*.html")
-    for path in paths:
-        fill_file_with_content(path,contents)
-
-def run():
-    contents = read_all_contents()
-    print(contents)
-    duplicate_template_dir()
-    fill_all_files("target",contents)
-    print("Finished!")
-
-run()
-    
