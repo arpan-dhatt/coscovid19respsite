@@ -14,39 +14,7 @@
 </head>
 
 <body>
-    <!-- navbar  -->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-down"><i
-                    class="material-icons">menu</i></a>
-            <a href="index.html" class="brand-logo">{{site-title}}</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="health.html">Health</a></li>
-                <li><a href="employees.html">Employees</a></li>
-                <li><a href="finance.html">Finance</a></li>
-                <li><a href="inventory-management.html">Inventory Management</a></li>
-                <li><a href="marketing.html">Marketing</a></li>
-                <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- sidenav  -->
-    <ul id="slide-out" class="sidenav">
-        <li>
-            <h3 style="margin: 10px;">COVID-19 Small Business Response</h3>
-        </li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a href="health.html">Health</a></li>
-        <li><a href="employees.html">Employees</a></li>
-        <li><a href="finance.html">Finance</a></li>
-        <li><a href="inventory-management.html">Inventory Management</a></li>
-        <li><a href="marketing.html">Marketing</a></li>
-        <li><a href="sales-maintainance.html">Sales Maintainance</a></li>
-    </ul>
+    <div include-html="navigation.html"></div>
     <div class="parallax-container">
         <h1 class="white-text center">{{health-page-title}}</h1>
         <h3 class="white-text center">{{health-page-subtitle}}</h3>
@@ -91,34 +59,10 @@
         </div>
 
     </div>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
+    <div include-html="footer.html"></div>
 
     <script src="materialize-src/js/bin/materialize.min.js"></script>
+    <script src="include-html.js"></script>
     <script>
         M.AutoInit()
     </script>
