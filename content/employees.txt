@@ -8,25 +8,155 @@ employees-page-introduction
 lalalalal
 ==============================
 employees-steps-title
-lalalalal
+<b>Business Side</b>, on the business side, a few steps can be taken to ensure that your business is able to utilize employees and to ensure that your business can continue to hold on to its employees
+
 ==============================
 employees-steps-1-title
-lalalalal
+Remote Working
 ==============================
 employees-steps-1-body
-lalalalal
+<ul>
+<li>The CDC, and WHO recommend that businesses shift towards remote working in order to continue the policy of social distancing and to slow the spread of the virus
+</li>
+<li>There are numerous services and tools that businesses can use in order to make a seamless transition to remote working
+</li>
+<li>Chat/Instant Messaging</li>
+<li>
+<ul><li>Slack and Microsoft Teams are business focussed communication platforms that allow for communication between different teams, departments, and the company and a whole. They have different channels that allow for communication to occur between different segments of the company and are currently used by many large businesses</li></ul>
+</li>
+<li>Virtual Interaction</li>
+<li>
+<ul><li>Platforms like Google Hangouts, and Zoom allow for virtual face-to-face interaction between members of your company, but also with members of other companies. These platforms also come with features like screen-sharing capabilities, recording and live chat which can help in communicating remotely.</li></ul>
+</li>
+<li>Cloud Storage</li>
+<li>
+<ul><li>It can be hard for employees to have access to their company's internal server and data when they are not in the office which is where cloud storage can come in. Platforms like Google Drive, or Dropbox allow the seamless sharing and access to data from anywhere and can be a pivotal role in enabling remote working</li></ul>
+</li>
+<li>Productivity Trackers</li>
+<li>
+<ul><li>It can be easy to get off track and distracted when at home, but thankfully, there are a whole host of productivity trackers that businesses can use to hold employees accountable and ensure they are not getting off task. Some popular productivity trackers include Toggl, Todoist and focus booster</li></ul>
+</li>
+<li>Project Management Tools</li>
+<li>
+<ul><li>Maintaining a normal workflow and communicating everyone's roles and tasks can be challenging when working remotely. That’s why it's important to use some project management tools so each employee knows what to do, and when. They also enable management to have better oversight over how employees are functioning. Some good project management tools include Trello, Basecamp, Asana, Airtable or Monday.com. These applications both allow managers to view a list of pre-planned goals and steps in order to achieve them, to ensure that even when working remotely, a clear agenda for all employees is set. </li></ul>
+</li>
+</ul>
 ==============================
 employees-steps-2-title
-lalalalal
+Alternative Task/Company Development
 ==============================
 employees-steps-2-body
-lalalalal
+<ul>
+<li>Although normal business is disrupted because of the virus, it does not mean that employees automatically become redundant. This time can be used for a variety of functions that can better prepare businesses for the future once COVID-19 has passed
+</li>
+<li>Employees can work on
+<li>
+<ul>
+<li>
+Marketing Teams:
+</li>
+<li>
+<ul>
+<li>Spot out new opportunities amongst this adversity</li>
+<li>Consumer Outreach through email updates and social media</li>
+<li>Skills training</li>
+</ul>
+</li>
+<li>
+Management:
+</li>
+</li>
+<ul>
+<li>Skills training</li>
+<li>Develop new strategies for sales, customer service etc</li>
+<li>Developing stronger internal systems</li>
+<ul>
+</li>
+<li>
+Lower-level workers:
+</li>
+<li><ul>
+<li>Skills training</li>
+<li>Repairs, maintenance, or renovations</li>
+<li>Stock up on products, services, etc for after the outbreak passes</li>
+</ul>
+</li>
+</ul>
+</li>
+</li>
+</ul>
 ==============================
 employees-steps-3-title
-lalalalal
+Meeting Payroll
 ==============================
 employees-steps-3-body
-lalalalal
+<ul>
+<li>The reduction in cash flow means that it will be hard for business to maintain payroll, but their are a few steps that can be taken in order to mitigate this issue</li>
+<li>
+<ul>
+<li>Cut working hours or obligations to justify a temporary lower salary</li>
+<li>Encourage employees to take their vacation days now</li>
+<li>Furlough employees and ask them to take a temporary pay cut</li>
+</ul>
+</li>
+</ul>
+==============================
+employees-steps-title-2
+<b>Employee Side</b>, COVID-19 has caused a huge amount of uncertainty and stress for employees whose jobs and health may now be in limbo, it is important that businesses are there to help deal with these concerns for long term sustainability
+==============================
+employees-steps-1-title-2
+Employee Anxiety/Uncertainty
+==============================
+employees-steps-1-body-2
+<ul>
+<li>The uncertainty caused by a decrease in business and lack of knowledge about COVID-19 can cause great anxiety and fear in employees. It is important for business to take steps to reduce this fear for the well-being of the nation, and for the efficiency and success of the business. Here are a few steps that can be taken to reduce this issue</li>
+<li><ul>
+<li>Communicate frequently and openly with your employees and ensure they are in the loop of communication to erase any sense of uncertainty</li>
+<li>Implement proper hygiene and health recommendations from the CDC and educate the employees about the steps the business is taking to protect their health, more information about health steps that can be taken can be found here<add link></li>
+<li>Try to be flexible in working accommodations. Enable employees to work remotely or at their own pace to deal with school closures, and other exigent restrictions put in place to deal with the virus</li>
+<li>Limit employee travel and exposure to areas that could expose them to the virus</li>
+<li>Make sure to communicate and implement and recommendations or restrictions governments have imposed in order to fight the spread of COVID-19</li>
+<li>Create an environment that let’s employees know that they can communicate their concerns or queries to management</li>
+</ul></li>
+</ul>
+==============================
+employees-steps-2-title-2
+Medical Leave
+==============================
+employees-steps-2-body-2
+<ul>
+<li>The “Families First” Coronavirus Aid Package has made some changes to the status of medical leave for employees</li>
+<li>If an employee is unable to work because they're subject to quarantine or isolation, are experiencing symptoms of COVID–19, are caring for someone who is in quarantine or isolation, and/or have children in schools that have closed, employers with fewer than 500 employees have to provide two weeks' worth of paid sick leave.</li>
+<li>In order to offset the losses, employers themselves will receive tax credits to offset the costs of providing this paid leave.</li>
+<li>It is important to allow employees to be healthy at home or allow them to help others at home to ensure their productivity and loyalty to the company after this disease subsides.</li>
+<ul>
+==============================
+employees-steps-3-title-2
+Employee Finance
+==============================
+employees-steps-3-body-2
+<ul>
+<li>Many employees are now struggling to afford their bills, rent, food, and other essentials due to reduced hours and furloughs from the virus</li>
+<li>This is harmful as these employees make up the foundation of any business and will be important for the recovery of a business after the pandemic subsides</li>
+<li>It is hard to find good employees so it is important steps be taken to retain them. A company can do this in a few ways</li>
+<li>
+<ul>
+<li>Talk with employees and provide them resources that better enable them to budget there money and get by these hard times</li>
+<li>Some resources that can be offered to employees include</li>
+<li>
+<ul>
+<li>LIST THEM HERE</li>
+</ul>
+</li>
+<li>Encourage employees to find jobs elsewhere in industries that require manpower now such as</li>
+<li>
+<ul>
+<li>Delivery Drivers</li><li>Warehouse workers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 ==============================
 employees-page-other-sites-title
 lalalalal
