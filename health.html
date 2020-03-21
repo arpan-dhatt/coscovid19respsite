@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div include-html="navigation.html"></div>
+    <div include-html="navigation.html?v=2"></div>
     <div class="parallax-container">
         <h1 class="white-text center">{{health-page-title}}</h1>
         <h3 class="white-text center">{{health-page-subtitle}}</h3>
@@ -24,6 +24,15 @@
     <div class="container">
         <div class="section white">
             <p>{{health-page-introduction}}
+                <ul class="browser-default">
+                    <li>hello:
+                        <ul class="browser-default">
+                            <li>hello-a</li>
+                            <li>hello-b</li>
+                        </ul>
+                    </li>
+                    <li>hello 2</li>
+                </ul>
             </p>
         </div>
         <div class="divider"></div>
@@ -33,7 +42,7 @@
                 <li>
                     <div class="collapsible-header">{{health-steps-1-title}}</div>
                     <div class="collapsible-body">
-                        <p>{{health-steps-1-body}}</p>
+                        <p><ul><li>hello</li><li>hello 2</li></ul></p>
                     </div>
                 </li>
                 <li>
@@ -59,7 +68,7 @@
         </div>
 
     </div>
-    <div include-html="footer.html"></div>
+    <div include-html="footer.html?v=1"></div>
 
     <script src="materialize-src/js/bin/materialize.min.js"></script>
     <script src="include-html.js"></script>

@@ -13,8 +13,8 @@
 
 </head>
 
-<body>
-    <div include-html="navigation.html"></div>
+<body onload="init_swipeable()">
+    <div include-html="navigation.html?v=2"></div>
     <div class="parallax-container">
         <h1 class="white-text center">{{home-page-title}}</h1>
         <h3 class="white-text center">{{home-page-subtitle}}</h3>
@@ -105,24 +105,24 @@
         <div class="divider"></div>
         <div class="section">
             <h4>{{home-page-government-involvement-title}}</h4>
-                <p>{{home-page-government-involvement-body}}</p>
-                <ul id="swipeable-government-tabs" class="tabs tabs-fixed-width">
-                    <li class="tab col s3"><a class="active" href="#local">LOCAL</a></li>
-                    <li class="tab col s3"><a href="#state">STATE</a></li>
-                    <li class="tab col s3"><a href="#national">NATIONAL</a></li>
-                </ul>
-                <div id="local" class="col s12">
-                    <h5>{{home-page-local-government-title}}</h5>
-                    <p>{{home-page-local-government-body}}</p>
-                </div>
-                <div id="state" class="col s12">
-                    <h5>{{home-page-state-government-title}}</h5>
-                    <p>{{home-page-state-government-body}}</p>
-                </div>
-                <div id="national" class="col s12">
-                    <h5>{{home-page-national-government-title}}</h5>
-                    <p>{{home-page-national-government-body}}</p>
-                </div>
+            <p>{{home-page-government-involvement-body}}</p>
+            <ul id="swipeable-government-tabs" class="tabs tabs-fixed-width">
+                <li class="tab col s3"><a class="active" href="#local">LOCAL</a></li>
+                <li class="tab col s3"><a href="#state">STATE</a></li>
+                <li class="tab col s3"><a href="#national">NATIONAL</a></li>
+            </ul>
+            <div id="local" class="col s12">
+                <h5>{{home-page-local-government-title}}</h5>
+                <p>{{home-page-local-government-body}}</p>
+            </div>
+            <div id="state" class="col s12">
+                <h5>{{home-page-state-government-title}}</h5>
+                <p>{{home-page-state-government-body}}</p>
+            </div>
+            <div id="national" class="col s12">
+                <h5>{{home-page-national-government-title}}</h5>
+                <p>{{home-page-national-government-body}}</p>
+            </div>
         </div>
         <div class="divider"></div>
         <div class="section">
@@ -133,12 +133,14 @@
         </div>
 
     </div>
-    <div include-html="footer.html"></div>
+    <div include-html="footer.html?v=1"></div>
     <script src="materialize-src/js/bin/materialize.min.js"></script>
     <script src="include-html.js"></script>
     <script>
         M.AutoInit()
-        var instance = M.Tabs.init(document.getElementById("swipeable-government-tabs"), {"swipeable":true});
+        function init_swipeable() {
+            let instance = M.Tabs.init(document.getElementById("swipeable-government-tabs"),{"swipeable":true})
+        }
     </script>
 </body>
 
