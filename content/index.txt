@@ -1,13 +1,10 @@
 home-page-title
-lalalalal
 ==============================
 home-page-subtitle
 lalalalal
 ==============================
 home-page-introduction
-This is the introduction to the home page. It's pretty cool. I hope this parser works.
 
-If it doesn't I won't be very happy if it doesn't.
 ==============================
 health-card-title
 lalalalal
