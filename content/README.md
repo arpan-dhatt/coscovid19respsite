@@ -11,11 +11,11 @@ This program writes information from the content/ directory
     type the content. There can be new lines in this content
     (or even two in a row), but there cannot be three new lines 
     in this block. After you finish this key/value pair, move
-    onto the next key/value pair by inserting THREE new 
-    lines(pressing return 3 times) and then typing your
-    next key.
+    onto the next key/value pair by inserting 30 new 
+    equal signs and then typing your next key.
+
     The files with these key/value pairs may be in ANY configuration
-    of .txt FILES but there must NOT BE ANY FOLDERS or nexting of
+    of .txt FILES but there must NOT BE ANY FOLDERS or nesting of
     files!
 
     NOTE: If you want custom HTML formatting for content inside
@@ -24,15 +24,11 @@ This program writes information from the content/ directory
     Here is an example content file:
     greeting <-- this is a key
     Welcome to this amazing website! <-- this is content
-
-
-    body <-- this is the next key, notice two empty lines(means 3 new lines)
+    ==============================
+    body <-- this is the next key
     This is such a <i>cool</i> place, why don't you do some cool
     stuff here.
-
     This is another paragraph <-- this and previous paragraph are content
-    ^^^^^ notice there is one empty line(this means there were 2 new lines
-    which is valid)
     ^^^^^ the word cool in the first paragraph under body will be italicized.
 
     Instructions for template directory:
