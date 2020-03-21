@@ -1,5 +1,10 @@
 .parallax img { width: 100%; }
+.parallax-container { width: 100%;}
 
-li {
+.browser-default li {
     margin-bottom: 5px;
+}
+
+.collapsible-header {
+    font-weight: bold;
 }
