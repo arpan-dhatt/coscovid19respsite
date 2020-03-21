@@ -59,11 +59,11 @@ def read_all_contents():
 
 def read_content_file(file_text):
     contents = []
-    splits = file_text.split("\n\n\n")
+    splits = file_text.split("==============================")
     for split in splits:
-        split = split.replace("\n\n","<br>")
-        lines = split.split("\n")
-        key = lines[0]
+        split = split.replace("\n\n","<br><br>")
+        lines = list(filter(lambda s: len(s) != 0, split.split("\n")))
+        key = lines[0].replace("<br>","").replace("\n","")
         content = " ".join(lines[1:])
         contents.append((key,content))
     return contents
@@ -98,7 +98,6 @@ def fill_all_files(dir,contents):
 
 def run():
     contents = read_all_contents()
-    print(contents)
     duplicate_template_dir()
     fill_all_files("target",contents)
     print("Finished!")
