@@ -8,3 +8,7 @@
 .collapsible-header {
     font-weight: bold;
 }
+
+.logo {
+    max-height: 50px;
+}
