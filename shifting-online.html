@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>COVID-19 Response</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="materialize-src/css/materialize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body onload="init_swipeable()">
+    <div include-html="navigation.html?v=3"></div>
+    <div class="parallax-container">
+        <h1 class="white-text center">Shifting to Online Channels</h1>
+        <h3 class="white-text center">Building an online presence will significantly soften the blow from the reduction
+            in physical interaction</h3>
+        <div class="parallax"><img style="filter: brightness(50%);" src="assets/marketing-page-parallax.jpeg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h4>There are many different paths that can be taken to <b>increase your business' online presence</b>,
+                depending on its industry</h4>
+            <ul id="swipeable-industry-tabs" class="tabs tabs-fixed-width">
+                <li class="tab col s4"><a class="active" href="#resturants">RESTURANTS</a></li>
+                <li class="tab col s4"><a href="#retail">RETAIL</a></li>
+                <li class="tab col s4"><a href="#services">SERVICES</a></li>
+            </ul>
+            <div id="resturants" class="col s12">
+                <h5>Online Avenues for Resturants</h5>
+                <p>
+                    <ol class="browser-default">
+                        <li>Sign up for <a href="https://doordash.com">DoorDash</a>, <a href="https://ubereats.com">Uber
+                                Eats</a>, or <a href="grubhub.com">GrubHub</a> and compare the different benefits they
+                            offer. Choose what is right for your business.</li>
+                        <li>Follow the guidelines on their respective websites for joining their service.</li>
+                        <li>Make sure your customers know about your new delivery option through sales, social media
+                            promotions, emails, and more.</li>
+                    </ol>
+                    Investing in an online method of selling goods is not only necessary for the COVID-19 induced
+                    restrictions, but is also important as it helps your business adapt to changing business realities
+                    of the future.
+                </p>
+            </div>
+            <div id="retail" class="col s12">
+                <h5>Online Avenues for Retail Businesses</h5>
+                <p>
+                    <ol class="browser-default">
+                        <li>Set up an e-commerce presence. This can happen in two ways.
+                            E-commerce will help bypass the seller and allow you to keep a higher portion of
+                            the profits for your business.
+                            <ul class="browser-default">
+                                <li>Utilize online resources such <a href="wordpress.com">WordPress</a>, <a
+                                        href="shopify.com">Shopify</a>, <a href="godaddy.com">GoDaddy</a>, or many
+                                    others to create your own e-commerce store.
+                                </li>
+                                <li>Hire a professional agency to design your website for you</li>
+                            </ul>
+                            Both are good choices; a decision should be made based off of the position of your company.
+                        </li>
+                        <li>Ensure a delivery mechanism is set up:
+                            <ul class="browser-default">
+                                <li>This can include getting boxes, packaging tape, etc., and training staff in
+                                    packaging and sending out orders.
+                                </li>
+                                <li>This also includes finding a provider such as <a href="ups.com">UPS</a> or <a
+                                        href="fedex.com">Fedex</a> to do your business deliveries, as well as
+                                    integrating their system with your business.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Ensure that your website is optimized for search engines. By doing this, it is more likely a
+                            potential customer will choose your website over another. There are many services online
+                            that can help with this:
+                            <ul class="browser-default">
+                                <li><a href="https://moz.com/learn/seo/what-is-seo">What is SEO?</a></li>
+                                <li><a href="https://moz.com/beginners-guide-to-seo">Moz</a></li>
+                                <li><a href="https://searchengineland.com/guide/what-is-seo">Search Engine Land</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div id="services" class="col s12">
+                <h5>Online Avenues for Services</h5>
+                <p>Not all services are able to be conducted online. However, those that are should take advantage of
+                    e-commerce. Businesses encompass a whole host of industries that do not require physical interaction
+                    with customers. Lawyers, real estate agents, and tutors can all utilize online platforms to interact
+                    with customers and manage workflow from home.
+                    <ul class="browser-default">
+                        <li><a href="https://skype.com">Skype</a></li>
+                        <li><a href="https://zoom.us">Zoom</a></li>
+                    </ul>
+                    Investing in an online method of selling goods is not only necessary for COVID-19 induced
+                    restrictions, but is also important on its own, as it helps your business adapt to changing business
+                    realities of the future.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div include-html="footer.html?v=1"></div>
+    <script src="materialize-src/js/bin/materialize.min.js"></script>
+    <script src="include-html.js"></script>
+    <script>
+        M.AutoInit()
+        function init_swipeable() {
+            console.log("initiated");
+        }
+    </script>
+</body>
+
+</html>
